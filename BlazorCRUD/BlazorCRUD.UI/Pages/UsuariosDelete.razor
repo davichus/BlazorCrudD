@@ -1,0 +1,49 @@
+﻿@page "/usuariosdelete/{id:int}"
+@using Model
+@using Interfaces
+@inject IUsuariosService UsuariosService
+@inject NavigationManager NavigationManager
+<h3>Eliminar Usuario</h3>
+<p style="color:red; text-align:center">Are you sure you want to delete this User?</p>
+<EditForm Model="@usu">
+    <table class="table">
+        <tr>
+            <td>Usuario:</td>
+            <td> <input type="text" @bind="usu.Usuario" /> </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td> <input type="text" @bind="usu.Password" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="submit" class="btn btn-primary" value="Delete" @onclick="DeleteUsuario" />
+                <input type="button" class="btn btn-danger" value="Cancel" @onclick="Cancel" />
+            </td>
+        </tr>
+    </table>
+</EditForm>
+
+@code {
+    Usuarios usu = new Usuarios();
+
+    [Parameter]
+    public int id { get; set; }
+
+    protected async Task DeleteUsuario()
+    {
+        await UsuariosService.DeleteUsuario(id);
+        NavigationManager.NavigateTo("/UsuariosList");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        usu = await UsuariosService.GetDetails(id);
+    }
+
+    protected void Cancel()
+    {
+        NavigationManager.NavigateTo("/UsuariosList");
+    }
+
+}

@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{E7A5BC49-D114-4FDC-AED4-2096D5AB01FB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorCRUD.UI/appsettings.json">
+    <Files>
+      <File FileName="BlazorCRUD.UI/Interfaces/IFilmService.cs" />
+      <File FileName="BlazorCRUD.Model/Usuarios.cs" Line="8" Column="45" />
+      <File FileName="BlazorCRUD.UI/Pages/Login.razor" Line="67" Column="14" />
+      <File FileName="BlazorCRUD.UI/Pages/FilmsDetails.razor" />
+      <File FileName="BlazorCRUD.UI/Pages/Index.razor" />
+      <File FileName="BlazorCRUD.UI/Services/FilmService.cs" Line="27" Column="53" />
+      <File FileName="BlazorCRUD.Data.Dapper/FilmRepository.cs" />
+      <File FileName="BlazorCRUD.Data.Dapper/IFilmRepository.cs" />
+      <File FileName="BlazorCRUD.Data.Dapper/IUsuarioRepository.cs" Line="16" Column="63" />
+      <File FileName="BlazorCRUD.Data.Dapper/UsuarioRepository.cs" Line="34" Column="10" />
+      <File FileName="BlazorCRUD.UI/Interfaces/IUsuariosService.cs" Line="15" Column="52" />
+      <File FileName="BlazorCRUD.UI/Services/UsuariosService.cs" />
+      <File FileName="BlazorCRUD.Model/Film.cs" />
+      <File FileName="BlazorCRUD.UI/Startup.cs" />
+      <File FileName="BlazorCRUD.UI/Shared/MainLayout.razor" />
+      <File FileName="BlazorCRUD.UI/Shared/NavMenu.razor" />
+      <File FileName="BlazorCRUD.UI/Shared/LoginLayout.razor" Line="5" Column="14" />
+      <File FileName="BlazorCRUD.UI/Pages/FilmList.razor" />
+      <File FileName="BlazorCRUD.UI/Pages/FilmDelete.razor" />
+      <File FileName="BlazorCRUD.UI/Pages/UsuariosList.razor" />
+      <File FileName="BlazorCRUD.UI/Pages/UsuariosDetails.razor" />
+      <File FileName="BlazorCRUD.UI/Pages/UsuariosDelete.razor" />
+      <File FileName="BlazorCRUD.Model/CN_Encriptacion.cs" />
+      <File FileName="BlazorCRUD.UI/Pages/RecuperarPass.razor" Line="36" Column="20" />
+      <File FileName="BlazorCRUD.UI/Pages/Error.cshtml" />
+      <File FileName="BlazorCRUD.UI/Pages/_Host.cshtml" />
+      <File FileName="BlazorCRUD.Model/CN_Mail.cs" />
+      <File FileName="BlazorCRUD.UI/appsettings.json" Line="14" Column="1" />
+      <File FileName="BlazorCRUD.UI/Data/SqlConfiguration.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorCRUD" expanded="True">
+            <Node name="BlazorCRUD.Data.Dapper" expanded="True" />
+            <Node name="BlazorCRUD.Model" expanded="True" />
+            <Node name="BlazorCRUD.UI" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BlazorCRUD.UI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

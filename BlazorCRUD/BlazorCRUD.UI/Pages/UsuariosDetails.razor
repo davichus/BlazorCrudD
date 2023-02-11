@@ -1,0 +1,56 @@
+﻿@page "/usuariosdetails"
+@page "/usuariosdetails/{id:int}"
+@using Model
+@using Interfaces
+@inject IUsuariosService UsuariosService
+@inject NavigationManager NavigationManager
+<h3>Registrar Usuarios</h3>
+<EditForm Model="@usu">
+    <table class="table">
+        <tr>
+            <td>Usuario:</td>
+            <td> <input type="text" @bind="usu.Usuario" /> </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td> <input type="text" @bind="usu.Password" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="submit" class="btn btn-primary" value="Save" @onclick="SaveUsuarios" />
+                <input type="button" class="btn btn-danger" value="Cancel" @onclick="CancelUser" />
+            </td>
+        </tr>
+    </table>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    Usuarios usu = new Usuarios();
+    string pass = "";
+    protected void CancelUser()
+    {
+        NavigationManager.NavigateTo("/UsuariosList");
+    }
+
+    protected async Task SaveUsuarios()
+    {
+        await UsuariosService.SaveUsuarios(usu);
+        NavigationManager.NavigateTo("/UsuariosList");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (id == 0)
+        {
+            
+        }
+        else
+        {
+           usu = await UsuariosService.GetDetails(id);
+           usu.Password= CN_Encriptacion.DesEncriptar(usu.Password);
+        }
+    }
+}

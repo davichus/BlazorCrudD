@@ -1,0 +1,10 @@
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/bin/Debug/netstandard2.1/BlazorCRUD.Model.deps.json
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/bin/Debug/netstandard2.1/BlazorCRUD.Model.dll
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/bin/Debug/netstandard2.1/BlazorCRUD.Model.pdb
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.AssemblyInfoInputs.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.AssemblyInfo.cs
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.csproj.CoreCompileInputs.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.dll
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.pdb
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.csproj.AssemblyReference.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Model/obj/Debug/netstandard2.1/BlazorCRUD.Model.GeneratedMSBuildEditorConfig.editorconfig

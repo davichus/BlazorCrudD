@@ -1,0 +1,51 @@
+﻿@layout LoginLayout
+@page "/Recuperar"
+@using Model
+@using Interfaces
+@inject IUsuariosService UsuariosService
+@inject NavigationManager NavigationManager
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+<EditForm Model="@usu">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Recuperar contraseña
+            </div>
+            <div class="card-body">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Usuario" @bind="@usu.Usuario" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Correo" @bind="@to" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" @onclick="Recuperar">
+                    Recuperar contraseña
+                </button>
+                <label style="color:red;">@confirm</label>
+
+            </div>
+        </div>
+    </div>
+</EditForm>
+@code {
+
+    Usuarios usu = new Usuarios();
+    string from = "davidnava1998efrain@outlook.com";
+    string pass = "Quakewar199812**";
+    string to = "";
+    string msg = "Su contraseña es: ";
+    string confirm = "";
+    string password = "";
+    protected async Task Recuperar()
+    {
+        var result = await UsuariosService.GetPassword(usu.Usuario);
+        var password1 = result.Password;
+        password = password1.ToString();
+        password = CN_Encriptacion.DesEncriptar(password);
+        CN_Mail mail = new CN_Mail();
+        mail.enviarcorreo(from, pass, to, msg+password);
+        confirm = "Correo enviado con exito";
+    }
+
+}

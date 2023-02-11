@@ -1,0 +1,13 @@
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.csproj.AssemblyReference.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.AssemblyInfoInputs.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.AssemblyInfo.cs
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.csproj.CoreCompileInputs.cache
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/bin/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.deps.json
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/bin/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.dll
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/bin/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.pdb
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/bin/Debug/netstandard2.1/BlazorCRUD.Model.dll
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/bin/Debug/netstandard2.1/BlazorCRUD.Model.pdb
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.csproj.CopyComplete
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.dll
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.pdb
+/Users/davidnavarrete/Projects/BlazorCRUD/BlazorCRUD.Data.Dapper/obj/Debug/netstandard2.1/BlazorCRUD.Data.Dapper.GeneratedMSBuildEditorConfig.editorconfig

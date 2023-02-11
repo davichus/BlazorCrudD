@@ -1,0 +1,53 @@
+﻿@page "/UsuariosList"
+@using Model
+@using Interfaces
+@inject IUsuariosService UsuariosService
+@inject NavigationManager NavigationManager
+<h3>Usuarios</h3>
+<p>
+    <a href="/usuariosdetails" class="btn btn-primary"><i class="oi oi-plus"></i> Nuevo Usuario</a>
+</p>
+@if (usu == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Password</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usus in usu)
+            {
+                <tr>
+                    <td>@usus.Usuario</td>
+                    <td>@usus.Password</td>
+                    <td><a href="/usuariosdetails/@usus.Id" class="btn btn-warning"><i class="oi oi-pencil"></i></a></td>
+                    <td><a href="/usuariosdelete/@usus.Id" class="btn btn-danger"><i class="oi oi-trash"></i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Usuarios> usu;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            usu = await UsuariosService.GetAllUsuarios();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+}

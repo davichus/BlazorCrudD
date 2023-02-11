@@ -1,0 +1,33 @@
+﻿@page "/Inicio"
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@inject NavigationManager NavigationManager
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code
+{
+    string usuario;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            usuario = await sessionStorage.GetItemAsync<string>("Usuario");
+            if (usuario != null)
+            {
+
+            }
+            else
+            {
+                NavigationManager.NavigateTo("/");
+            }
+        }
+        catch (Exception ex)
+        {
+            NavigationManager.NavigateTo("/");
+        }
+
+    }
+}
